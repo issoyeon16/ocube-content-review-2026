@@ -1,0 +1,193 @@
+.embedded-intro {
+  padding: clamp(78px, 8vw, 96px) clamp(20px, 5vw, 40px) clamp(96px, 8vw, 140px);
+  background: var(--soft);
+  text-align: center;
+}
+.embedded-intro > span {
+  display: block;
+  color: var(--blue-text);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+.embedded-intro h2 {
+  max-width: 980px;
+  margin: 18px auto 24px;
+  font-size: clamp(34px, 4vw, 60px);
+  line-height: 1.15;
+  letter-spacing: -0.04em;
+}
+.embedded-intro h2 span {
+  display: block;
+}
+.embedded-intro > div {
+  max-width: 760px;
+  margin: auto;
+}
+.embedded-intro p {
+  margin: 0;
+  color: var(--muted);
+  font-size: clamp(15.5px, 1.5vw, 17px);
+  line-height: 1.8;
+}
+.embedded-intro figure {
+  width: min(1120px, 100%);
+  margin: 58px auto 0;
+  padding: clamp(18px, 2.4vw, 34px);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 20px 60px rgba(20, 20, 20, 0.08);
+}
+.embedded-intro figure img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.embedded-intro figcaption {
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 12.5px;
+}
+.embedded-tech {
+  padding: 46px 0 42px;
+  background: var(--soft);
+}
+.embedded-tech > .business-wrap > p {
+  display: block;
+  margin: 0 0 16px;
+  text-align: center;
+  color: var(--blue-text);
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.embedded-tech-window {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
+}
+.embedded-tech-window > div {
+  display: flex;
+  gap: 14px;
+  width: mbusiness-content;
+  animation: embedded-tech-flow 28s linear infinite;
+}
+.embedded-tech-window:hover > div {
+  animation-play-state: paused;
+}
+.embedded-tech-window span {
+  flex: none;
+  padding: 12px 26px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--muted);
+  font-size: 16.5px;
+  font-weight: 800;
+}
+.embedded-tech small {
+  display: block;
+  margin-top: 14px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 13px;
+}
+@keyframes embedded-tech-flow {
+  to {
+    transform: translateX(-50%);
+  }
+}
+.embedded-content .business-applications {
+  background: var(--soft);
+}
+.embedded-references {
+  padding: clamp(64px, 8.5vw, 132px) 0;
+  background: #fff;
+}
+.embedded-reference-head > span {
+  color: var(--blue-text);
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.embedded-reference-head h2 {
+  margin: 14px 0 0;
+  font-size: clamp(27px, 3.3vw, 44px);
+}
+.embedded-reference-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 44px;
+}
+.embedded-reference-grid article {
+  padding: 26px 24px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--soft);
+  transition: 0.2s;
+}
+.embedded-reference-grid article:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(20, 20, 20, 0.08);
+}
+.embedded-reference-grid article > span {
+  color: var(--blue-text);
+  font-size: 12.5px;
+  font-weight: 700;
+}
+.embedded-reference-grid h3 {
+  margin: 10px 0 18px;
+  font-size: 19px;
+}
+.embedded-reference-grid p {
+  margin: 9px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+.embedded-reference-grid p b {
+  margin-right: 5px;
+  color: var(--fg);
+}
+.embedded-references .business-wrap > a {
+  display: inline-flex;
+  margin-top: 34px;
+  padding: 13px 26px;
+  border: 1.5px solid var(--line);
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.embedded-references .business-wrap > a:hover {
+  border-color: var(--fg);
+  background: var(--soft);
+}
+@media (max-width: 900px) {
+  .embedded-reference-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 760px) {
+  .embedded-intro h2 span {
+    display: inline;
+  }
+  .embedded-intro figure {
+    margin-top: 38px;
+  }
+  .embedded-tech-window span {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .embedded-tech-window > div {
+    animation: none;
+  }
+  .embedded-tech-window {
+    overflow-x: auto;
+  }
+}

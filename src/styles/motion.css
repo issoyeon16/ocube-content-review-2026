@@ -1,0 +1,18 @@
+.scroll-reveal.motion-ready {
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity 0.75s cubic-bezier(0.22, 0.61, 0.36, 1) var(--reveal-delay, 0ms),
+    transform 0.75s cubic-bezier(0.22, 0.61, 0.36, 1) var(--reveal-delay, 0ms);
+}
+.scroll-reveal.motion-ready.is-revealed {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .scroll-reveal.motion-ready {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

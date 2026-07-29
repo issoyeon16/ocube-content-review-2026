@@ -1,0 +1,404 @@
+.business-page {
+  background: #f3f2ed;
+  color: #11130f;
+}
+.business-overview,
+.business-process,
+.business-vendors,
+.business-areas,
+.business-cases,
+.business-public,
+.business-support {
+  padding: clamp(90px, 11vw, 170px) 6vw;
+}
+.business-section-head {
+  display: grid;
+  grid-template-columns: 0.38fr 1fr 0.72fr;
+  gap: 4vw;
+  align-items: end;
+  margin-bottom: clamp(48px, 7vw, 96px);
+}
+.business-section-head > p {
+  align-self: start;
+  margin: 0;
+  color: #0064f0;
+  font-family: var(--font-sans);
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+.business-section-head h2 {
+  margin: 0;
+  font-size: clamp(2.6rem, 4.5vw, 5rem);
+  line-height: 1.04;
+  letter-spacing: -0.055em;
+}
+.business-section-head > span {
+  color: #626660;
+  font-size: 0.95rem;
+  line-height: 1.75;
+}
+.business-overview dl {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0;
+  border-top: 1px solid #bfc0bb;
+  border-bottom: 1px solid #bfc0bb;
+}
+.business-overview dl > div {
+  min-height: 180px;
+  padding: 32px;
+  border-right: 1px solid #bfc0bb;
+}
+.business-overview dl > div:last-child {
+  border-right: 0;
+}
+.business-overview dt {
+  font-size: 0.68rem;
+  font-weight: 800;
+  color: #0064f0;
+}
+.business-overview dd {
+  margin: 56px 0 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.55;
+}
+.business-process {
+  background: #ffffff;
+}
+.business-process-layout {
+  display: grid;
+  grid-template-columns: minmax(250px, 35%) 1fr;
+  gap: clamp(40px, 8vw, 140px);
+  align-items: start;
+}
+.business-process-sticky {
+  position: sticky;
+  top: 104px;
+  padding-top: 8px;
+}
+.business-process-sticky > p,
+.business-features article p {
+  margin: 0 0 30px;
+  color: #0064f0;
+  font-family: var(--font-sans);
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+.business-process-sticky h2 {
+  margin: 0;
+  font-size: clamp(2.5rem, 4vw, 4.6rem);
+  line-height: 1.08;
+  letter-spacing: -0.055em;
+}
+.business-process-sticky > span {
+  display: block;
+  max-width: 390px;
+  margin-top: 32px;
+  color: #676b65;
+  font-size: 0.94rem;
+  line-height: 1.75;
+}
+.business-process-sticky > div {
+  display: flex;
+  gap: 10px;
+  margin-top: 46px;
+}
+.business-process-sticky i {
+  font-style: normal;
+  font-family: var(--font-sans);
+  font-size: 0.6rem;
+  color: #a5a8a1;
+}
+.business-steps {
+  display: grid;
+  gap: clamp(80px, 10vw, 150px);
+}
+.business-steps article {
+  position: relative;
+}
+.business-step-image {
+  position: relative;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  background: #111a29;
+}
+.business-step-image img {
+  object-fit: cover;
+}
+.business-step-copy {
+  position: relative;
+  padding: 34px 8px 0;
+}
+.business-step-copy > span {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  color: #11130f0f;
+  font-family: var(--font-sans);
+  font-size: clamp(5rem, 10vw, 10rem);
+  font-weight: 800;
+  line-height: 1;
+}
+.business-step-copy h3 {
+  position: relative;
+  margin: 0 0 18px;
+  font-size: clamp(1.55rem, 2.2vw, 2.45rem);
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+}
+.business-step-copy > p {
+  position: relative;
+  max-width: 660px;
+  margin: 0;
+  color: #555a53;
+  line-height: 1.7;
+}
+.business-step-copy ul {
+  position: relative;
+  list-style: none;
+  margin: 25px 0 0;
+  padding: 23px 0 0;
+  border-top: 1px solid #d6d7d1;
+  display: grid;
+  gap: 11px;
+}
+.business-step-copy li {
+  position: relative;
+  padding-left: 17px;
+  color: #747871;
+  font-size: 0.79rem;
+  line-height: 1.55;
+}
+.business-step-copy li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.65em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #0064f0;
+}
+.business-vendors,
+.business-support {
+  background: #fff;
+}
+.business-card-grid,
+.vendor-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+.business-card-grid article,
+.vendor-grid article {
+  min-height: 320px;
+  padding: 30px;
+  border: 1px solid #d6d7d2;
+  border-radius: 20px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.business-card-grid article > span,
+.vendor-grid article > span {
+  color: #0064f0;
+  font-family: var(--font-sans);
+  font-size: 0.64rem;
+  font-weight: 800;
+}
+.business-card-grid h3,
+.vendor-grid h3 {
+  margin: 50px 0 18px;
+  font-size: 1.75rem;
+  letter-spacing: -0.04em;
+}
+.business-card-grid p,
+.vendor-grid p {
+  margin: 0;
+  color: #5f635e;
+  line-height: 1.7;
+}
+.business-card-image {
+  position: relative;
+  height: 190px;
+  margin: -30px -30px 28px;
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
+  background: #f4f4f1;
+}
+.business-card-image img {
+  object-fit: cover;
+}
+.vendor-grid .business-card-image img {
+  object-fit: contain;
+  padding: 36px;
+}
+.business-card-grid ul {
+  list-style: none;
+  margin: auto 0 0;
+  padding: 28px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+.business-card-grid li {
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: #eef3ff;
+  color: #245696;
+  font-size: 0.65rem;
+}
+.business-cases,
+.business-public {
+  background: #0064f0;
+  color: #fff;
+}
+.business-cases .business-section-head > p,
+.business-public .business-section-head > p,
+.business-public .business-section-head > span {
+  color: #dbe9ff;
+}
+.business-cases .business-card-grid article,
+.business-public .business-card-grid article {
+  border-color: #ffffff35;
+  background: #fff;
+  color: #11130f;
+}
+.business-public .business-card-grid article {
+  background: #ffffff0d;
+  color: #fff;
+}
+.business-public .business-card-grid p {
+  color: #e1ebfa;
+}
+.business-features {
+  padding: 0 6vw;
+  background: #0d1727;
+  color: #fff;
+}
+.business-features article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8vw;
+  padding: clamp(85px, 10vw, 150px) 0;
+  border-bottom: 1px solid #ffffff20;
+}
+.business-features article:last-child {
+  border-bottom: 0;
+}
+.business-features h2 {
+  margin: 0;
+  font-size: clamp(2.4rem, 4vw, 4.4rem);
+  line-height: 1.08;
+  letter-spacing: -0.055em;
+}
+.business-features article span {
+  display: block;
+  margin-top: 26px;
+  color: #aeb8c7;
+  line-height: 1.75;
+}
+.business-features ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #ffffff38;
+}
+.business-features li {
+  padding: 20px 4px;
+  border-bottom: 1px solid #ffffff38;
+  color: #dce4ef;
+  font-size: 0.9rem;
+}
+.business-support {
+  background: #f3f2ed;
+}
+.business-support .business-card-grid {
+  grid-template-columns: repeat(5, 1fr);
+}
+.business-support .business-card-grid article {
+  min-height: 260px;
+}
+.business-support .business-card-grid h3 {
+  font-size: 1.35rem;
+}
+@media (max-width: 1000px) {
+  .business-section-head {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .business-process-layout {
+    grid-template-columns: 1fr;
+  }
+  .business-process-sticky {
+    position: static;
+  }
+  .business-process-sticky h2 br {
+    display: none;
+  }
+  .business-card-grid,
+  .vendor-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .business-support .business-card-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .business-features article {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 760px) {
+  .business-overview,
+  .business-process,
+  .business-vendors,
+  .business-areas,
+  .business-cases,
+  .business-public,
+  .business-support {
+    padding: 90px 6vw;
+  }
+  .business-section-head h2 {
+    font-size: clamp(2.35rem, 9vw, 3.5rem);
+  }
+  .business-overview dl {
+    grid-template-columns: 1fr;
+  }
+  .business-overview dl > div {
+    min-height: 140px;
+    border-right: 0;
+    border-bottom: 1px solid #bfc0bb;
+  }
+  .business-overview dl > div:last-child {
+    border-bottom: 0;
+  }
+  .business-overview dd {
+    margin-top: 28px;
+  }
+  .business-step-copy {
+    padding: 25px 2px 0;
+  }
+  .business-step-copy h3 {
+    font-size: 1.7rem;
+  }
+  .business-card-grid,
+  .vendor-grid,
+  .business-support .business-card-grid {
+    grid-template-columns: 1fr;
+  }
+  .business-card-grid article,
+  .vendor-grid article {
+    min-height: 260px;
+  }
+  .business-card-image {
+    height: 210px;
+  }
+  .business-features {
+    padding-inline: 6vw;
+  }
+  .business-features h2 {
+    font-size: 2.35rem;
+  }
+}

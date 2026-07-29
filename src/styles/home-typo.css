@@ -1,0 +1,150 @@
+/* Home identity section — reference layout with the existing scroll-driven motion. */
+.typo-section {
+  position: relative;
+  height: 606px;
+  min-height: 606px;
+  padding: 0 7vw;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: #fff;
+  color: #0b0c0f;
+}
+
+.typo-layout {
+  width: min(1284px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(360px, 0.92fr) minmax(420px, 1.08fr);
+  align-items: center;
+  gap: clamp(80px, 9vw, 150px);
+}
+
+.typo-stage {
+  position: relative;
+  inset: auto;
+  min-height: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.typo-row {
+  width: mbusiness-content;
+  color: #08090b;
+  font-family: var(--font-sans);
+  font-size: clamp(54px, 5vw, 72px);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.055em;
+}
+
+.typo-open {
+  align-self: flex-start;
+}
+
+.typo-cube {
+  align-self: flex-end;
+  margin-top: 18px;
+  color: #2865e8;
+  -webkit-text-stroke: 0;
+}
+
+.typo-cube em {
+  color: inherit;
+  font-style: normal;
+  -webkit-text-stroke: 0;
+}
+
+.typo-copy {
+  position: relative;
+  z-index: 2;
+  left: auto;
+  bottom: auto;
+  width: auto;
+  display: block;
+  color: #202329;
+  font-family: var(--font-sans);
+  font-size: 20px;
+  line-height: 1.75;
+}
+
+.typo-copy p {
+  margin: 0;
+  white-space: nowrap;
+}
+
+.typo-copy p + p {
+  margin-top: 2px;
+}
+
+.typo-copy b {
+  font-weight: 650;
+}
+
+.typo-copy a {
+  width: mbusiness-content;
+  margin-top: 30px;
+  padding: 11px 17px;
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  border: 1px solid #11151b;
+  border-radius: 999px;
+  color: #11151b;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.typo-copy a:hover,
+.typo-copy a:focus-visible {
+  background: #11151b;
+  color: #fff;
+}
+
+.typo-copy a svg {
+  width: 14px;
+  height: 14px;
+}
+
+@media (max-width: 800px) {
+  .typo-section {
+    min-height: 680px;
+    padding: 80px 24px;
+  }
+
+  .typo-layout {
+    grid-template-columns: 1fr;
+    gap: 62px;
+  }
+
+  .typo-stage {
+    width: min(430px, 100%);
+    min-height: 150px;
+    margin: 0 auto;
+  }
+
+  .typo-row {
+    font-size: clamp(48px, 14vw, 66px);
+  }
+
+  .typo-copy {
+    width: min(520px, 100%);
+    margin: 0 auto;
+    font-size: 15px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .typo-open,
+  .typo-cube,
+  .typo-copy {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+  }
+}

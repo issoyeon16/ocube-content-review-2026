@@ -1,0 +1,528 @@
+.business-content {
+  --c: #fff;
+  --soft: #f6f5f4;
+  --fg: #141414;
+  --muted: #615d59;
+  --line: #e6e6e6;
+  --blue: #0075de;
+  --blue-text: #0a5cbf;
+  background: #fff;
+  color: var(--fg);
+  font-family: var(--font-sans);
+  word-break: keep-all;
+}
+.business-content * {
+  box-sizing: border-box;
+}
+.business-wrap {
+  max-width: 1280px;
+  margin: auto;
+  padding-inline: clamp(20px, 5vw, 40px);
+}
+.ax-clients {
+  padding: 56px 0;
+  border-bottom: 1px solid var(--line);
+  overflow: hidden;
+}
+.ax-clients-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 32px;
+}
+.ax-clients-head span,
+.business-section-head > span {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--blue-text);
+}
+.ax-clients-head p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+.ax-clients-marquee {
+  position: relative;
+  overflow: hidden;
+}
+.ax-clients-marquee:before,
+.ax-clients-marquee:after {
+  content: "";
+  position: absolute;
+  inset-block: 0;
+  width: clamp(20px, 5vw, 40px);
+  z-index: 2;
+  pointer-events: none;
+}
+.ax-clients-marquee:before {
+  left: 0;
+  background: linear-gradient(90deg, #fff 25%, transparent);
+}
+.ax-clients-marquee:after {
+  right: 0;
+  background: linear-gradient(270deg, #fff 25%, transparent);
+}
+.ax-clients-track {
+  display: flex;
+  gap: 16px;
+  width: mbusiness-content;
+  margin-left: 16px;
+  animation: ax-roll 28s linear infinite;
+}
+.ax-clients-marquee:hover .ax-clients-track {
+  animation-play-state: paused;
+}
+.ax-client-logo {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  width: 210px;
+  height: 98px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  background: #fafbfd;
+  border-radius: 12px;
+}
+.ax-client-logo img {
+  width: auto;
+  height: auto;
+  max-width: 145px;
+  max-height: 46px;
+  object-fit: contain;
+  filter: grayscale(1);
+  opacity: 0.72;
+  transition: 0.3s;
+}
+.ax-client-logo:hover img {
+  filter: none;
+  opacity: 1;
+}
+@keyframes ax-roll {
+  from {
+    transform: translateX(calc(-25% - 4px));
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.business-process {
+  padding: clamp(64px, 8.5vw, 132px) 0;
+}
+.business-process-layout {
+  display: grid;
+  grid-template-columns: minmax(250px, 35%) 1fr;
+  gap: clamp(28px, 5vw, 64px);
+  align-items: start;
+}
+.business-process-copy {
+  position: sticky;
+  top: 104px;
+}
+.business-process-copy > span {
+  color: var(--blue-text);
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.business-process-copy h2 {
+  margin: 12px 0 0;
+  font-size: clamp(24px, 2.8vw, 36px);
+  line-height: 1.16;
+  letter-spacing: -0.022em;
+}
+.business-process-copy h2 em {
+  color: var(--blue-text);
+  font-style: normal;
+}
+.business-process-copy > p {
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 15.5px;
+  line-height: 1.66;
+}
+.business-process-copy > div {
+  display: flex;
+  gap: 6px;
+  margin-top: 26px;
+}
+.business-process-copy i {
+  width: 24px;
+  height: 3px;
+  border-radius: 3px;
+  background: var(--line);
+  transition: background 0.3s;
+}
+.business-process-copy i.on {
+  background: var(--blue);
+}
+.business-process-list {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(30px, 4vw, 54px);
+}
+.business-process-item {
+  position: relative;
+  max-width: 660px;
+}
+.business-process-item:before {
+  content: attr(data-number);
+  position: absolute;
+}
+.business-process-image {
+  position: relative;
+  aspect-ratio: 16/9;
+  margin-bottom: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(91, 155, 255, 0.2);
+  border-radius: 14px;
+  background: #0a1324;
+  box-shadow: 0 18px 42px rgba(8, 16, 31, 0.18);
+}
+.business-process-image:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    125deg,
+    transparent 58%,
+    rgba(8, 16, 31, 0.16) 76%,
+    rgba(8, 16, 31, 0.72)
+  );
+  pointer-events: none;
+}
+.business-process-image img {
+  object-fit: cover;
+  transition: transform 0.45s;
+}
+.business-process-item:hover img {
+  transform: scale(1.018);
+}
+.business-process-number {
+  color: var(--blue-text);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+.business-process-item h3 {
+  margin: 8px 0 0;
+  font-size: clamp(19px, 2vw, 23px);
+  line-height: 1.16;
+}
+.business-process-item > p {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.65;
+}
+.business-process-item ul {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.business-process-item li {
+  position: relative;
+  padding-left: 16px;
+  color: var(--muted);
+  font-size: 14.5px;
+  line-height: 1.62;
+}
+.business-process-item li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--blue);
+  opacity: 0.55;
+}
+.business-applications {
+  padding: 48px 0;
+  background: var(--soft);
+}
+.business-applications .business-wrap {
+  padding-inline: 36px;
+}
+.business-applications .business-section-head {
+  display: block;
+  margin-bottom: 0;
+}
+.business-section-head h2 {
+  margin: 14px 0 0;
+  font-size: 44px;
+  line-height: 1.16;
+}
+.business-section-head p {
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-size: 19px;
+  line-height: 1.66;
+}
+.business-application-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 40px;
+}
+.business-application-grid article {
+  min-height: 197px;
+  padding: 18px 22px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: #fff;
+  transition: 0.2s;
+}
+.business-application-grid article:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(20, 20, 20, 0.08);
+}
+.business-application-grid article > div {
+  font-size: 26px;
+  line-height: 1.2;
+}
+.business-application-grid h3 {
+  margin: 12px 0 0;
+  font-size: 19px;
+}
+.business-application-grid p {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 14.5px;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .business-application-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .business-section-head h2 {
+    font-size: 36px;
+  }
+
+  .business-section-head p {
+    font-size: 17px;
+  }
+
+  .business-application-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.ax-cases {
+  padding: clamp(78px, 9vw, 132px) 0;
+  background: var(--blue);
+  color: #fff;
+  overflow: hidden;
+}
+.ax-cases-head {
+  width: min(860px, 90vw);
+  margin: 0 auto clamp(40px, 5vw, 64px);
+  text-align: center;
+}
+.ax-cases-head > span {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+.ax-cases-head h2 {
+  margin: 18px 0 0;
+  color: #fff;
+  font-size: clamp(34px, 5.2vw, 64px);
+  line-height: 1.12;
+  letter-spacing: -0.04em;
+}
+.ax-cases-head p {
+  margin: 22px 0 0;
+  font-size: clamp(15px, 1.5vw, 16.5px);
+  line-height: 1.75;
+}
+.ax-case-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+.ax-case-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 550px;
+  padding: 24px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 22px 60px rgba(0, 39, 108, 0.18);
+}
+.ax-case-image {
+  position: relative;
+  aspect-ratio: 16/9;
+  margin-bottom: 30px;
+  overflow: hidden;
+  border-radius: 14px;
+  background: #eaf2ff;
+}
+.ax-case-image:after {
+  content: "구축 사례";
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 5px 9px;
+  border-radius: 999px;
+  background: rgba(8, 16, 31, 0.72);
+  font-size: 11px;
+  font-weight: 700;
+}
+.ax-case-image img {
+  object-fit: cover;
+  transition: transform 0.35s;
+}
+.ax-case-card:hover img {
+  transform: scale(1.035);
+}
+.ax-case-card > span {
+  color: var(--blue-text);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+}
+.ax-case-card h3 {
+  margin: 12px 0 0;
+  color: var(--fg);
+  font-size: clamp(21px, 2.1vw, 26px);
+}
+.ax-case-card > p {
+  min-height: 92px;
+  margin: 14px 0 20px;
+  color: var(--muted);
+  font-size: 15.5px;
+  line-height: 1.7;
+}
+.ax-case-card ul {
+  display: grid;
+  gap: 12px;
+  margin: auto 0 0;
+  padding: 22px 0 0;
+  border-top: 1px solid var(--line);
+  list-style: none;
+}
+.ax-case-card li {
+  display: flex;
+  gap: 10px;
+  color: var(--fg);
+  font-size: 15.5px;
+}
+.ax-case-card li i {
+  display: grid;
+  place-items: center;
+  flex: 0 0 18px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--blue);
+  font-size: 10px;
+  font-style: normal;
+  color: #fff;
+}
+.ax-cases-more {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: min(260px, 90vw);
+  min-height: 52px;
+  margin: 42px auto 0;
+  padding: 0 20px;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 999px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+}
+.ax-cases-more:hover {
+  background: #fff;
+  color: var(--blue-text);
+}
+@media (max-width: 1000px) {
+  .ax-case-grid {
+    grid-template-columns: 1fr;
+  }
+  .ax-case-card {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 0 28px;
+    min-height: 0;
+  }
+  .ax-case-image {
+    grid-row: 1/6;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 760px) {
+  .ax-clients-head {
+    display: block;
+  }
+  .ax-clients-head p {
+    margin-top: 10px;
+  }
+  .ax-client-logo {
+    width: 170px;
+    height: 84px;
+  }
+  .business-process-layout {
+    grid-template-columns: 1fr;
+  }
+  .business-process-copy {
+    position: static;
+  }
+  .business-process-list {
+    margin-top: 20px;
+  }
+  .ax-case-card {
+    display: flex;
+  }
+  .ax-case-image {
+    margin-bottom: 24px;
+  }
+  .ax-case-card > p {
+    min-height: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ax-clients-track {
+    animation: none;
+  }
+  .ax-clients-marquee {
+    overflow-x: auto;
+  }
+}
+
+.business-process-item:before {
+  z-index: 2;
+  top: 14px;
+  right: 18px;
+  color: #fff;
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1;
+  opacity: 0.34;
+  pointer-events: none;
+}
+.business-content h2,
+.business-content h3 {
+  font-weight: 800;
+}
+
+.ax-clients:hover .ax-clients-track,
+.ax-clients.is-paused .ax-clients-track {
+  animation-play-state: paused !important;
+}
+.ax-clients.is-paused .ax-client-logo img {
+  transition: none;
+  will-change: auto;
+}

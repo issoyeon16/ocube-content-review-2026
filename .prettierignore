@@ -1,0 +1,9 @@
+node_modules
+.next
+old
+public/assets/**/*.avif
+public/assets/**/*.jpg
+public/assets/**/*.jpeg
+public/assets/**/*.png
+public/assets/**/*.webp
+public/assets/**/*.mp4

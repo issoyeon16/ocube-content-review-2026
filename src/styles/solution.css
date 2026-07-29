@@ -1,0 +1,9 @@
+.solution-page {
+  background: #f3f2ed;
+  color: #11130f;
+}
+.solution-content-host {
+  display: block;
+  min-height: 100vh;
+  background: #fff;
+}

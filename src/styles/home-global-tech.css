@@ -1,0 +1,111 @@
+/* Global technology partners — centered home section. */
+.global-tech-section {
+  min-width: 1284px;
+  height: 727px;
+  min-height: 727px;
+  padding: 150px max(calc((100vw - 1284px) / 2), 72px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: #fff;
+  color: #090a0d;
+  text-align: center;
+}
+
+.global-tech-copy .section-label {
+  margin: 0 0 18px;
+  color: #145fe8;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.015em;
+}
+
+.global-tech-copy h2 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 750;
+  line-height: 1.2;
+  letter-spacing: -0.055em;
+}
+
+.global-tech-copy > p:last-child {
+  margin: 45px 0 0;
+  color: #22252a;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.65;
+  letter-spacing: -0.025em;
+}
+
+.global-tech-logos {
+  width: 1278px;
+  margin-top: 130px;
+  display: grid;
+  grid-template-columns: repeat(6, 213px);
+  align-items: center;
+  gap: 0;
+}
+
+.global-tech-logos a {
+  height: 62px;
+  display: grid;
+  place-items: center;
+}
+
+.global-tech-logos img {
+  display: block;
+  width: 100%;
+  height: 62px;
+  max-width: 126px;
+  object-fit: contain;
+  transition:
+    transform 0.25s ease,
+    opacity 0.25s ease;
+}
+
+.global-tech-logos a:hover img,
+.global-tech-logos a:focus-visible img {
+  opacity: 0.76;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 800px) {
+  .global-tech-section {
+    min-width: 0;
+    height: auto;
+    min-height: auto;
+    padding: 84px 24px 76px;
+  }
+
+  .global-tech-copy h2 {
+    font-size: clamp(30px, 9vw, 42px);
+  }
+
+  .global-tech-copy > p:last-child {
+    margin-top: 32px;
+    font-size: 14px;
+  }
+
+  .global-tech-logos {
+    width: 100%;
+    margin-top: 52px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px 20px;
+  }
+
+  .global-tech-logos img {
+    max-width: 100px;
+    max-height: 34px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .global-tech-copy,
+  .global-tech-logos a {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+  }
+}

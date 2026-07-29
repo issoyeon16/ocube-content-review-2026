@@ -1,0 +1,228 @@
+.subpage-hero {
+  height: 135vh;
+  position: relative;
+  background: #f2f1eb;
+}
+.subpage-hero-stage {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+.subpage-hero-intro {
+  position: absolute;
+  z-index: 2;
+  left: 6vw;
+  top: 24vh;
+}
+.subpage-hero-intro p,
+.subpage-hero-content > p {
+  margin: 0 0 20px;
+  color: #0064f0;
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+}
+.subpage-hero-intro h1 {
+  margin: 0;
+  font-size: clamp(4.2rem, 8vw, 8.5rem);
+  line-height: 0.9;
+  letter-spacing: -0.065em;
+}
+.subpage-hero-intro > span {
+  display: block;
+  margin-top: 24px;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+.subpage-hero-visual {
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  bottom: -188px;
+  width: min(960px, 75vw);
+  height: 45vh;
+  transform: translateX(-50%);
+  overflow: hidden;
+  border-radius: 24px 24px 0 0;
+  background: #081225;
+  will-change: width, height, bottom, border-radius;
+}
+.subpage-hero-visual > img {
+  object-fit: cover;
+}
+.subpage-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, #07101fe6 0, #07101f8a 56%, #07101f30),
+    linear-gradient(0deg, #07101fb8 0, transparent 55%);
+}
+.subpage-hero-content {
+  position: absolute;
+  z-index: 2;
+  left: 7vw;
+  bottom: 10vh;
+  width: min(900px, 78vw);
+  color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(50px);
+}
+.subpage-hero-content h2 {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-size: clamp(3rem, 4.8vw, 5.4rem);
+  font-weight: 600;
+  line-height: 1.06;
+  letter-spacing: -0.05em;
+}
+.subpage-hero-content small {
+  display: block;
+  max-width: 650px;
+  margin-top: 30px;
+  color: #d6dce8;
+  font-size: 0.94rem;
+  line-height: 1.7;
+  white-space: pre-line;
+}
+.subpage-hero-scroll {
+  position: absolute;
+  z-index: 2;
+  right: 5vw;
+  bottom: 4vh;
+  font-family: var(--font-sans);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  writing-mode: vertical-rl;
+}
+
+.subpage-hero--standard,
+.subpage-hero--standard .subpage-hero-stage {
+  height: 863px;
+}
+
+.subpage-hero--standard {
+  background: #fff;
+}
+
+.subpage-hero--standard .subpage-hero-intro h1 {
+  display: flex;
+  flex-direction: column;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.18;
+  letter-spacing: -0.045em;
+}
+
+.subpage-hero--standard .subpage-hero-intro > p {
+  font-weight: 600;
+}
+
+.subpage-hero--standard .subpage-hero-visual {
+  max-height: none;
+}
+
+.subpage-hero--standard .subpage-hero-overlay {
+  background: linear-gradient(
+    90deg,
+    rgba(31, 60, 112, 0.25) 0%,
+    rgba(31, 49, 101, 0.06) 58%,
+    transparent 80%
+  );
+}
+
+.subpage-hero--standard .subpage-hero-content {
+  top: 198px;
+  bottom: auto;
+  left: 17vw;
+  width: 1060px;
+}
+
+.subpage-hero--standard .subpage-hero-content > p {
+  margin-bottom: 21px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  text-transform: none;
+}
+
+.subpage-hero--standard .subpage-hero-content h2 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.22;
+  letter-spacing: -0.045em;
+}
+
+.subpage-hero--standard .subpage-hero-content small {
+  max-width: 1020px;
+  margin-top: 82px;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 18px;
+  line-height: 1.72;
+}
+
+.subpage-hero--standard .subpage-hero-scroll {
+  display: none;
+}
+@media (max-width: 760px) {
+  .subpage-hero-intro {
+    left: 6vw;
+    top: 25vh;
+  }
+  .subpage-hero-intro h1 {
+    font-size: clamp(3.5rem, 16vw, 5.4rem);
+  }
+  .subpage-hero-visual {
+    width: 88vw;
+    height: 40vh;
+    bottom: -120px;
+  }
+  .subpage-hero-content {
+    left: 7vw;
+    bottom: 12vh;
+    width: 86vw;
+  }
+  .subpage-hero-content h2 {
+    display: block;
+    font-size: clamp(2.45rem, 9vw, 3.8rem);
+  }
+  .subpage-hero-content h2 span {
+    display: inline;
+  }
+  .subpage-hero-content h2 span + span:before {
+    content: " ";
+  }
+  .subpage-hero-content small {
+    font-size: 0.8rem;
+  }
+  .subpage-hero-scroll {
+    display: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .subpage-hero-visual {
+    width: 100vw;
+    height: 100vh;
+    bottom: 0;
+    border-radius: 0;
+  }
+  .subpage-hero-intro {
+    display: none;
+  }
+  .subpage-hero-content {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+
+  .subpage-hero--standard .subpage-hero-visual {
+    height: 863px;
+  }
+}

@@ -1,0 +1,232 @@
+footer.contact {
+  display: block;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: inherit;
+  text-align: left;
+  background: transparent;
+}
+
+footer.contact > .contact-inner {
+  display: block;
+  width: 100%;
+  max-width: none;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #111;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+footer.contact .contact-shell {
+  display: block;
+  width: min(1120px, calc(100% - 80px));
+  margin: 0 auto;
+  padding: 135px 0 120px;
+}
+
+footer.contact .contact-top {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 60px;
+  align-items: start;
+  padding-bottom: 110px;
+}
+
+footer.contact .contact-copy {
+  text-align: left;
+}
+
+footer.contact .contact-copy .section-label,
+footer.contact .contact-button,
+footer.contact .contact-badge-ring,
+footer.contact .contact-company-logo-default {
+  display: none;
+}
+
+footer.contact .contact-copy h2 {
+  max-width: 1000px;
+  margin: 0;
+  color: #fff;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.045em;
+}
+
+footer.contact .contact-description {
+  max-width: 520px;
+  margin-top: 30px;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+footer.contact .contact-badge {
+  width: 104px;
+  height: 104px;
+  margin: -20px 0 0;
+}
+
+footer.contact .contact-badge-core {
+  width: 104px;
+  height: 104px;
+  color: #fff;
+  background: #2861e6;
+}
+
+footer.contact .contact-badge-core:hover {
+  background: #174dcc;
+}
+
+footer.contact .contact-badge-core svg {
+  width: 28px;
+  height: 28px;
+}
+
+footer.contact .contact-info {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(400px, 0.75fr);
+  gap: 80px;
+  padding-top: 0;
+  border-top: 0;
+}
+
+footer.contact .contact-company-brand-home {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  color: rgba(255, 255, 255, 0.28);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+footer.contact .contact-company-brand-home img {
+  width: 104px;
+  height: auto;
+  filter: brightness(0) invert(1);
+  opacity: 0.28;
+}
+
+footer.contact .contact-company-brand-home span {
+  padding-left: 24px;
+  border-left: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+footer.contact .contact-company dl {
+  margin-top: 26px;
+}
+
+footer.contact .contact-company dt,
+footer.contact .contact-company dd,
+footer.contact .contact-links p,
+footer.contact .contact-links a {
+  font-size: 14px;
+}
+
+footer.contact .contact-links {
+  display: grid;
+  grid-template-columns: 90px 190px 90px;
+  gap: 24px;
+}
+
+footer.contact .contact-links > div:nth-child(2) {
+  display: grid;
+  grid-template-rows: auto repeat(4, 1fr);
+  grid-template-columns: repeat(2, 78px);
+  grid-auto-flow: column;
+  column-gap: 28px;
+}
+
+footer.contact .contact-links > div:nth-child(2) p {
+  grid-row: 1;
+  grid-column: 1;
+  justify-self: start;
+  text-align: left;
+}
+
+footer.contact .contact-legal {
+  margin-top: 70px;
+  padding-top: 0;
+  border-top: 0;
+  font-size: 11px;
+}
+
+footer.contact .contact-legal a:first-of-type {
+  margin-left: auto;
+}
+
+@media (max-width: 900px) {
+  footer.contact .contact-shell {
+    width: calc(100% - 64px);
+    padding: 96px 0 72px;
+  }
+
+  footer.contact .contact-top {
+    padding-bottom: 72px;
+  }
+
+  footer.contact .contact-copy h2 {
+    font-size: clamp(44px, 7vw, 60px);
+  }
+
+  footer.contact .contact-info {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  footer.contact .contact-links {
+    grid-template-columns: 90px 190px 90px;
+  }
+}
+
+@media (max-width: 760px) {
+  footer.contact .contact-shell {
+    width: calc(100% - 48px);
+    padding: 72px 0 48px;
+  }
+
+  footer.contact .contact-top {
+    display: block;
+    padding-bottom: 64px;
+  }
+
+  footer.contact .contact-copy h2 {
+    font-size: clamp(36px, 10vw, 48px);
+  }
+
+  footer.contact .contact-description {
+    font-size: 16px;
+  }
+
+  footer.contact .contact-badge {
+    display: none;
+  }
+
+  footer.contact .contact-links {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px;
+  }
+
+  footer.contact .contact-links > div:nth-child(2) {
+    display: block;
+  }
+
+  footer.contact .contact-links > div:last-child {
+    grid-column: 1 / -1;
+  }
+
+  footer.contact .contact-legal {
+    margin-top: 48px;
+  }
+
+  footer.contact .contact-legal a:first-of-type {
+    margin-left: 0;
+  }
+}

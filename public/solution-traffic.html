@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QVision 영상 인식 교통·안전 — 오큐브</title>
+<meta name="description" content="QVision — 영상 인식(Vision) AI로 교통을 분석하고 도로·작업 위험을 감지합니다.">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/site2.css?v=content-60">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="canonical" href="https://issoyeon16.github.io/ocube-content-review-2026/solution-traffic.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='7'%20fill='%230e1626'/%3E%3Cpath%20d='M16%206.5l7.5%204.3v8.6L16%2023.7l-7.5-4.3v-8.6z'%20fill='none'%20stroke='%230075de'%20stroke-width='1.8'/%3E%3Cpath%20d='M16%206.5v17.2M8.5%2010.8l7.5%204.3%207.5-4.3'%20stroke='%235b9bff'%20stroke-width='1.4'%20fill='none'/%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="오큐브(주)">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:title" content="QVision 영상 인식 교통·안전 — 오큐브">
+<meta property="og:description" content="QVision — 영상 인식(Vision) AI로 교통을 분석하고 도로·작업 위험을 감지합니다.">
+<meta property="og:url" content="https://issoyeon16.github.io/ocube-content-review-2026/solution-traffic.html">
+<meta property="og:image" content="https://issoyeon16.github.io/ocube-content-review-2026/og-content-60.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="QVision 영상 인식 교통·안전 — 오큐브">
+<meta name="twitter:description" content="QVision — 영상 인식(Vision) AI로 교통을 분석하고 도로·작업 위험을 감지합니다.">
+<meta name="twitter:image" content="https://issoyeon16.github.io/ocube-content-review-2026/og-content-60.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"홈","item":"https://issoyeon16.github.io/ocube-content-review-2026/"},{"@type":"ListItem","position":2,"name":"QVision","item":"https://issoyeon16.github.io/ocube-content-review-2026/solution-traffic.html"}]}</script>
+</head>
+<body>
+<a class="skip" href="#top">본문 바로가기</a>
+
+<header class="gnb">
+  <div class="wrap nav">
+    <a href="index.html" class="logo" aria-label="오큐브 홈"><img src="assets/ci_01.avif" alt="OCUBE" width="462" height="140"></a>
+    <nav class="nav-menu" aria-label="주 메뉴">
+      <div class="nav-item"><a role="button" aria-haspopup="true" tabindex="0">Business <span class="badge-caret" aria-hidden="true">▾</span></a>
+        <div class="dropdown">
+          <div class="dd-group"><p class="dd-h">BUSINESS</p>
+            <a href="business-ax.html">AX<small>AI 전환·<wbr>프로젝트 수행</small></a>
+            <a href="business-embedded.html">Automotive &amp; Embedded<small>차량 전장·<wbr>설비제어·<wbr>엣지·<wbr>보안</small></a>
+            <a href="business-si.html">SI<small>기업·<wbr>공공 시스템 구축·<wbr>운영</small></a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item"><a role="button" aria-haspopup="true" tabindex="0">Solution <span class="badge-caret" aria-hidden="true">▾</span></a>
+        <div class="dropdown">
+          <div class="dd-group"><p class="dd-h">AI 플랫폼</p>
+            <a href="solution-cubeon.html">Cubeon<small>산업 AI 운영 플랫폼</small></a>
+            <a href="solution-dataq.html">QData<small>산업 데이터 플랫폼</small></a>
+            <a href="solution-factoryq.html">QFactory<small>AI 스마트 팩토리</small></a>
+            <a href="solution-agentq.html">QAgent<small>AI 에이전트</small></a>
+          </div>
+          <div class="dd-group"><p class="dd-h">산업 솔루션</p>
+            <a href="solution-qdrive.html">QDrive<small>모빌리티·<wbr>탄소중립</small></a>
+            <a href="solution-evcp.html">EVCP<small>전기차 충전 플랫폼</small></a>
+            <a href="solution-traffic.html">QVision<small>영상 인식 교통·<wbr>안전</small></a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item"><a href="business/global-tech/" role="button" aria-haspopup="true" tabindex="0">Global Partners <span class="badge-caret" aria-hidden="true">▾</span></a>
+        <div class="dropdown">
+          <div class="dd-group"><p class="dd-h">Global Tech</p>
+            <a href="business/global-tech/qt/">Qt<small>크로스플랫폼 UI 프레임워크</small></a>
+            <a href="business/global-tech/telit/">Telit Cinterion<small>셀룰러 IoT 모듈</small></a>
+            <a href="business/global-tech/toradex/">Toradex<small>산업용 컴퓨터 모듈·<wbr>캐리어보드</small></a>
+            <a href="business/global-tech/visualon/">VisualOn<small>멀티미디어 재생 개발도구</small></a>
+            <a href="business/global-tech/tuxera/">Tuxera<small>파일시스템 · 스토리지</small></a>
+            <a href="business/global-tech/protopie/">ProtoPie<small>하이피델리티 프로토타이핑</small></a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item"><a href="about/" role="button" aria-haspopup="true" tabindex="0">Company <span class="badge-caret" aria-hidden="true">▾</span></a>
+        <div class="dropdown">
+          <div class="dd-group"><p class="dd-h">COMPANY</p>
+            <a href="about/">About Ocube<small>인사말·<wbr>비전·<wbr>기업 아이덴티티</small></a>
+            <a href="company.html#history">History<small>연혁·<wbr>주요 이정표</small></a>
+            <a href="references.html">Use Cases<small>레퍼런스·<wbr>파트너</small></a>
+            <a href="location.html">Locations<small>서울·<wbr>안양·<wbr>대구</small></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <a href="contact.html" class="cta-btn">문의하기</a>
+    <button type="button" class="m-toggle" aria-label="메뉴 열기" aria-expanded="false">메뉴</button>
+  </div>
+</header>
+
+<nav class="m-panel" aria-label="모바일 메뉴">
+  <a href="business-ax.html">Business</a>
+  <a href="solution-cubeon.html">Solution</a>
+  <a href="business/global-tech/">Global Partners</a>
+  <a href="about/">Company</a>
+  <a href="contact.html">문의하기</a>
+</nav>
+
+
+
+<main>
+<div class="sol-open">
+<section id="top" class="hero page-hero dark sol-hero">
+  <div class="hero-bg" style="background-image:url('assets/video/sec_autonomous.jpg')" aria-hidden="true"></div>
+  <div class="hero-veil" aria-hidden="true"></div>
+<div class="hero-scroll" aria-hidden="true"><div class="wrap"><i></i><span>SCROLL</span></div></div>
+</section>
+
+<section class="sol-intro">
+  <div class="sol-copy-zone">
+    <div class="sol-copy page-hero">
+      <div class="wrap">
+    <span class="hero-badge">SOLUTION · 산업 솔루션</span>
+    <h1>QVision</h1>
+    <p class="sol-desc"><span>기존 카메라 영상을 교통·시설·작업 안전 이벤트로 전환합니다.</span><span>현장에서 분석하고 중앙에서 대응합니다.</span></p>
+      </div>
+    </div>
+  </div>
+  <div class="sol-body">
+    <figure class="sol-stage qvision-console rv d3">
+    <div class="qv-toolbar"><span class="qv-brand">QVision Safety Command</span><span class="qv-live">DEMO CONSOLE</span></div>
+    <div class="qv-grid">
+      <div class="qv-feed"><img src="assets/img/pothole.png" width="600" height="211" alt="도로 영상과 지도 기반 관제를 결합한 QVision 분석 화면" loading="lazy" width="600" height="217"><span class="qv-detect">노면 이상 · 검토 필요</span></div>
+      <div class="qv-side">
+        <div class="qv-kpi"><span>현재 감지</span><b>모니터링 중</b></div>
+        <div class="qv-kpi"><span>이벤트 흐름</span><b>검토 대기</b></div>
+        <div class="qv-kpi"><span>관제 연동</span><b>GIS 연결</b></div>
+      </div>
+    </div>
+    <figcaption>QVision 교통·안전 통합관제 — 개선안 UI 화면</figcaption>
+  </figure>
+  </div>
+</section>
+</div>
+
+<!-- CONTENT REVISION 2026-07 -->
+<nav class="subnav content-subnav" aria-label="QVision 페이지 목차"><div class="wrap"><a href="#overview">Overview</a><a href="#features">주요 기능</a><a href="#detect">기술·운영</a><a href="#proof">Reference</a></div></nav>
+
+<section id="overview" class="sec-anchor">
+  <div class="wrap">
+    <div class="reveal"><span class="kicker">Overview</span>
+    <h2>카메라가 영상을 저장하는 장비에서, 위험을 알려주는 센서로 바뀝니다</h2>
+    <p class="sec-sub">카메라 영상으로 차종·<wbr>통행량을 집계하고 포트홀·<wbr>돌발상황을 관제에 전달합니다.</p></div>
+    <div class="media-duo reveal" data-d="1">
+      <figure><img class="shot" src="assets/img/tms.png" width="560" height="204" alt="QVision — 영상 기반 교통 분석" loading="lazy" width="560" height="204">
+        <figcaption class="shot-cap">교통 분석 — 차종 분류·<wbr>통행량 계측</figcaption></figure>
+      <figure><img class="shot" src="assets/img/pothole.png" width="600" height="211" alt="포트홀 검출 — 노면 파손 자동 감지" loading="lazy" width="600" height="211">
+        <figcaption class="shot-cap">노면 안전 — 포트홀 자동 검출</figcaption></figure>
+    </div>
+    <div class="hero-stats reveal" data-d="2" style="margin-top:26px">
+      <div class="stat"><b>국책 주관</b><span>공공안전 AI 국책과제 — 오큐브 주관·<wbr>KT 수요기관</span></div>
+      <div class="stat"><b><span data-count="4">0</span><i class="u">개소</i></b><span>세이프뱃지 안전관제 실증</span></div>
+      <div class="stat"><b><span data-count="8">0</span><i class="u">종</i></b><span>자동 돌발상황 감지(AID) 항목</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Features — 실시간 검출 데모 -->
+<section id="features" class="sec-anchor">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="kicker">Features</span>
+      <h2>딥러닝 기반 정밀 영상 패턴 검출</h2>
+      <p class="lead">카메라 영상에서 차종별 교통량을 자동으로 집계하고, 노면 파손을 실시간으로 찾아 관제로 전달합니다.</p></div>
+    <div class="duo">
+      <div class="duo-txt rv"><span class="pill">TMS</span>
+        <h3>실시간 교통량 검출</h3>
+        <p>도로 영상에서 차량을 검지·<wbr>분류해 차종별 통행량을 자동으로 집계하고 통계로 정리합니다.</p>
+        <ul class="pi-bul">
+          <li><b>차종별 자동 조사</b> 지나는 차량을 종류별로 구분해 통행량 자동 집계</li>
+          <li><b>교차로 방향별 추적</b> 교차로 진행 방향별 교통량 추적 검출</li>
+          <li><b>고정식·<wbr>이동식 운용</b> 설치형과 이동형 조사 환경 모두 대응</li>
+        </ul>
+      </div>
+      <div class="duo-media stage rv d1">
+        <img src="assets/img/tms.png" width="560" height="204" alt="TMS 실시간 교통량 검출 화면 — 차종 분류·통행량 계측" loading="lazy">
+        <p class="fitcap">TMS — 실시간 교통량 검출</p>
+      </div>
+    </div>
+    <div class="duo rev">
+      <div class="duo-txt rv"><span class="pill">Road Safety</span>
+        <h3>포트홀 실시간 검출</h3>
+        <p>생명을 위협하는 도로 위의 시한폭탄, 포트홀을 영상 인식으로 검출하고 검출 정보를 관제합니다.</p>
+        <ul class="pi-bul">
+          <li><b>높은 검출율</b> 다양한 형태의 포트홀 학습 데이터로 높은 검출율</li>
+          <li><b>실시간 검출·<wbr>전송</b> 주행 중 실시간 검출과 검출 정보 전송</li>
+          <li><b>관제·<wbr>관리</b> 수집한 검출 정보의 관제·<wbr>관리 시스템 제공</li>
+        </ul>
+      </div>
+      <div class="duo-media stage rv d1">
+        <img src="assets/img/pothole.png" width="600" height="211" alt="포트홀 실시간 검출 데모 화면 — 차량 영상 인식 모듈과 관제 서버" loading="lazy">
+        <p class="fitcap">포트홀 — 실시간 검출 데모 (차량 영상 인식 · 관제 서버)</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TMS 상세 -->
+<section id="tms" class="sec-anchor deploy">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="kicker">TMS · Traffic Measurement Solution</span>
+      <h2>차종별 교통량을 자동으로 조사·<wbr>통계합니다</h2>
+      <p class="lead">AI Vision 기술을 이용한 차종별 교통량 자동 조사 시스템입니다.</p></div>
+    <div class="feat-list reveal" data-d="1">
+      <div class="feat"><b>학습 데이터</b><span>60만 건 규모 학습 데이터 기반 검출 정확도</span></div>
+      <div class="feat"><b>차종 구분</b><span>국토교통부 기준 12차종 + 버스 = 총 13차종 구분</span></div>
+      <div class="feat"><b>방향별 추적</b><span>교차로 진행 방향별 교통량 추적 검출</span></div>
+    </div>
+    <div class="dep-grid reveal" data-d="2" style="margin-top:clamp(24px,2.6vw,36px)">
+      <div class="dep-card"><div class="ic" aria-hidden="true">🚦</div><h3>교통량 조사 시스템</h3>
+        <p>고정식·<wbr>이동식 두 형태의 도로 교통량 조사</p></div>
+      <div class="dep-card"><div class="ic" aria-hidden="true">🚥</div><h3>자동 신호등 제어</h3>
+        <p>측정한 교통량 기준 신호 제어 연계</p></div>
+      <div class="dep-card"><div class="ic" aria-hidden="true">🅿️</div><h3>AI 주차 관제</h3>
+        <p>주차면 점유·<wbr>진출입 차량 영상 판별로 관제 활용</p></div>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="detect" class="sec-anchor dark">
+  <div class="wrap">
+    <div class="reveal"><span class="kicker">Incident Detection</span>
+    <h2>도로·<wbr>현장의 위험 영상을 관제 이벤트로 전환합니다</h2>
+    <p class="sec-sub">자동 돌발상황 감지(AID)가 위험 장면을 분류해 관제에 알립니다.</p></div>
+    <div class="mod-grid reveal" data-d="1">
+      <div class="mod">역주행</div>
+      <div class="mod">정지 차량</div>
+      <div class="mod">교통 정체</div>
+      <div class="mod">보행자 진입</div>
+      <div class="mod">낙하물</div>
+      <div class="mod">저시정·<wbr>연기</div>
+      <div class="mod">노면 파손(포트홀)</div>
+      <div class="mod">통행량·<wbr>차종</div>
+    </div>
+    <p class="sec-note">검지 항목은 현장 요건에 맞춰 확장하며, 오탐을 줄이기 위해 사람 검수 단계를 둘 수 있습니다. 개인영상정보 비식별 처리는 현장 요건과 관련 규정에 따라 적용합니다.</p>
+    <div class="feat-list reveal" data-d="2" style="margin-top:20px">
+      <div class="feat"><b>오탐 억제 설계</b><span>이벤트 신뢰도 점수·<wbr>연속 프레임 확인·<wbr>사람 검수를 거쳐 확정</span></div>
+      <div class="feat"><b>야간·<wbr>악천후 대응</b><span>저조도·<wbr>역광·<wbr>우천 환경의 검지 성능을 현장 데이터로 보정</span></div>
+      <div class="feat"><b>개인영상정보 보호</b><span>비식별(블러)·<wbr>접근 권한 분리·<wbr>보관 기한 관리로 영상정보 규정 준수</span></div>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="proof" class="evidence-section">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="kicker">Reference</span><h2>구축 경험으로 확인한 적용 가능성</h2><p class="lead">제품 기능이 실제 현장 과제와 어떻게 연결되는지 보여주는 대표 경험입니다.</p></div>
+    <div class="evidence-grid">
+      <article class="evidence-card reveal"><span class="status">제품 기술</span><h3>차종별 교통량 분석</h3><p>학습 데이터와 추적 기술을 기반으로 차종·방향별 통행량을 자동 조사·통계합니다.</p><span class="evidence-meta">13개 차종 · 방향별 추적</span></article>
+      <article class="evidence-card reveal"><span class="status">국책과제 주관</span><h3>세이프뱃지 작업자 안전</h3><p>영상·작업자 뱃지·환경 센서를 결합해 복합 위험을 작업자별로 판단합니다.</p><span class="evidence-meta">4개 현장 검증 중</span></article>
+      <article class="evidence-card reveal"><span class="status">도로 안전</span><h3>포트홀·돌발상황 관제</h3><p>도로 영상을 분석해 노면 파손과 돌발상황을 이벤트로 만들고 지도 관제와 연결합니다.</p><span class="evidence-meta">Edge AI · GIS 관제</span></article>
+    </div>
+  </div>
+</section>
+
+<section id="fit" class="sec-anchor deploy">
+  <div class="wrap">
+    <div class="reveal"><span class="kicker">Ideal Use Cases</span>
+    <h2>이런 현장에 적합합니다</h2>
+    <p class="sec-sub">이미 설치된 카메라를 더 쓰임새 있게 만들어야 하는 현장에 적합합니다.</p></div>
+    <div class="dep-grid g2 reveal" data-d="1" style="margin-top:24px">
+      <div class="dep-card"><h3>CCTV는 있지만 사람이 계속 봐야 하는 관제실</h3>
+        <p>화면 수가 많아 실시간 확인이 어렵고, 사후 확인에 그치는 환경</p></div>
+      <div class="dep-card"><h3>교통량 조사를 사람이 수행하는 구간</h3>
+        <p>조사 인력과 기간이 부담인 도로·<wbr>교차로</p></div>
+      <div class="dep-card"><h3>도로 점검이 순찰에 의존하는 지역</h3>
+        <p>신고 전에 찾아야 하는 포트홀·<wbr>균열</p></div>
+      <div class="dep-card"><h3>영상정보 보호가 중요한 기관</h3>
+        <p>원본을 밖으로 내보내지 않고 <b>현장에서 비식별 처리</b>해야 하는 환경</p></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer id="contact" class="fcta">
+  <div class="fcta-box">
+    <div class="wrap">
+      <div class="fcta-top">
+        <div>
+          <span class="kicker">CONTACT</span>
+          <h2 class="fcta-h">어떤 위험을 봐야 하는지 함께 정의합니다</h2>
+          <p class="fcta-p">도로·<wbr>현장 영상 데이터로 <b>감지할 위험</b>부터 정의</p>
+          <a href="contact.html" class="btn btn-primary fcta-btn" style="margin-top:26px">문의하기</a>
+        </div>
+        <div class="cta-badge">
+            <svg class="cta-badge-ring" viewBox="0 0 200 200" width="180" height="180" aria-hidden="true">
+              <defs><path id="ctaBadgePath" d="M100,100 m-84,0 a84,84 0 1,1 168,0 a84,84 0 1,1 -168,0"/></defs>
+              <text font-size="14" font-weight="700" letter-spacing="2.4"><textPath href="#ctaBadgePath">OCUBE · PROJECT INQUIRY · OCUBE · PROJECT INQUIRY · </textPath></text>
+            </svg>
+            <a href="contact.html" class="cta-badge-core" aria-label="문의하기">
+              <svg viewBox="0 0 19 17" width="19" height="17" aria-hidden="true"><path d="M10.7 1 17.7 8.3 10.7 15.6M17.7 8.3H1" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+      </div>
+
+      <div class="fcta-bot">
+        <div>
+          <img src="assets/logo_korean_t.png" alt="오큐브(주) | OCUBE CO.,LTD." class="fb-logo" width="672" height="70">
+          <dl class="fb-loc">
+            <div class="row"><dt>SEOUL</dt><dd>서울 강서구 강서로56가길 141 KM빌딩 2·3층</dd></div>
+            <div class="row"><dt>ANYANG</dt><dd>안양 동안구 LS로 142 금정역SKV1센터 722·723·710호</dd></div>
+            <div class="row"><dt>DAEGU</dt><dd>대구광역시 수성구 알파시티1로31길 18 (본사)</dd></div>
+          </dl>
+        </div>
+        <div class="fb-links">
+          <div class="fb-col"><p class="f-h">비즈니스</p>
+            <a href="business-ax.html">AX</a><a href="business-embedded.html">Automotive &amp; Embedded</a><a href="business-si.html">SI</a></div>
+          <div class="fb-col"><p class="f-h">솔루션</p>
+            <a href="solution-cubeon.html">Cubeon</a><a href="solution-dataq.html">QData</a><a href="solution-factoryq.html">QFactory</a><a href="solution-agentq.html">QAgent</a><a href="solution-qdrive.html">QDrive</a><a href="solution-evcp.html">EVCP</a><a href="solution-traffic.html">QVision</a></div>
+          <div class="fb-col"><p class="f-h">회사</p>
+            <a href="about/">회사소개</a><a href="location.html">오시는 길</a><a href="references.html">구축 사례</a><a href="contact.html">문의</a></div>
+        </div>
+      </div>
+
+      <div class="fb-legal">
+        <span>Copyright © OCUBE Co., Ltd. All rights reserved.</span>
+        <span>대표이사 원창연 · 사업자등록번호 504-81-71345</span>
+        <a href="tel:0533135333">053-313-5333</a>
+        <a href="mailto:sales@ocube.co.kr">sales@ocube.co.kr</a>
+        <a href="privacy.html">개인정보처리방침</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/site2.js?v=codex-11"></script>
+</body>
+</html>

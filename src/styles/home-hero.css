@@ -1,0 +1,227 @@
+/* Home hero visual system — video sources and slide behavior remain in the component. */
+.hero {
+  height: 145vh;
+  background: #020a15;
+}
+
+.hero-shell {
+  width: 100%;
+  background: #020a15;
+  clip-path: none;
+}
+
+.hero-media video,
+.hero-media > img {
+  width: 100%;
+  filter: brightness(0.8) saturate(0.94) contrast(1.06);
+}
+
+.hero-veil {
+  background:
+    radial-gradient(
+      circle at 50% 46%,
+      rgba(3, 19, 41, 0.03) 0 25%,
+      rgba(1, 9, 21, 0.2) 58%,
+      rgba(1, 7, 16, 0.64) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(1, 7, 16, 0.28) 0%,
+      rgba(1, 8, 18, 0.03) 38%,
+      rgba(1, 7, 16, 0.62) 100%
+    );
+}
+
+.hero-copy {
+  top: 37.5%;
+  left: 50%;
+  right: auto;
+  width: min(1120px, calc(100vw - 120px));
+  color: #fff;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.hero-copy > p {
+  margin: 0 0 22px;
+  color: rgba(255, 255, 255, 0.96);
+  font-family: var(--font-sans);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: -0.025em;
+  text-transform: none;
+}
+
+.hero-copy h1 {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  color: #fff;
+  font-family: var(--font-sans);
+  font-size: 64px;
+  font-weight: 750;
+  line-height: 1.28;
+  letter-spacing: -0.045em;
+  text-wrap: balance;
+}
+
+.typewriter-title {
+  min-height: 2.56em;
+}
+
+.typewriter-reserve {
+  display: none;
+}
+
+.typewriter-output {
+  position: relative;
+  inset: auto;
+  display: block;
+  width: 100%;
+}
+
+.typewriter-character {
+  opacity: 0;
+}
+
+.typewriter-character.is-visible {
+  opacity: 1;
+}
+
+.typewriter-character.is-current {
+  position: relative;
+}
+
+.typewriter-caret {
+  position: absolute;
+  right: -7px;
+  bottom: 0.1em;
+  width: 2px;
+  height: 0.86em;
+  margin-left: 0;
+}
+
+.hero-pagination {
+  right: auto;
+  bottom: 64px;
+  left: 50%;
+  width: min(1280px, 100%);
+  padding-right: clamp(20px, 5vw, 40px);
+  padding-left: clamp(20px, 5vw, 40px);
+  gap: 10px;
+  color: #fff;
+  font-family: var(--font-sans);
+  transform: translateX(-50%);
+}
+
+.hero-pagination button {
+  grid-template-columns: auto 1fr;
+  gap: 10px 4px;
+  opacity: 0.34;
+  transition: opacity 0.25s ease;
+}
+
+.hero-pagination button:hover,
+.hero-pagination button:focus-visible,
+.hero-pagination button.active {
+  opacity: 1;
+}
+
+.hero-pagination i {
+  height: 3px;
+  background: rgba(255, 255, 255, 0.36);
+}
+
+.hero-pagination button.active i::after {
+  background: #fff;
+}
+
+.hero-pagination small,
+.hero-pagination b {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.hero-pagination b {
+  justify-self: start;
+}
+
+.hero-controls {
+  position: absolute;
+  z-index: 6;
+  right: max(clamp(20px, 5vw, 40px), calc((100vw - 1280px) / 2 + 40px));
+  bottom: 126px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #fff;
+}
+
+.hero-controls button {
+  width: 18px;
+  height: 26px;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  border: 0;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.72);
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 26px;
+  line-height: 1;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.hero-controls button:hover,
+.hero-controls button:focus-visible {
+  color: #fff;
+  transform: scale(1.08);
+}
+
+.hero-controls .hero-autoplay-control {
+  color: #8fc8cf;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+@media (max-width: 760px) {
+  .hero-copy {
+    top: 47%;
+    width: calc(100vw - 40px);
+  }
+
+  .hero-copy > p {
+    margin-bottom: 16px;
+    font-size: 13px;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(29px, 8vw, 38px);
+    line-height: 1.25;
+  }
+
+  .hero-pagination {
+    bottom: 30px;
+    width: calc(100vw - 40px);
+    gap: 6px;
+  }
+
+  .hero-pagination small {
+    font-size: 11px;
+  }
+
+  .hero-pagination b {
+    display: none;
+  }
+
+  .hero-controls {
+    right: 20px;
+    bottom: 72px;
+  }
+}
