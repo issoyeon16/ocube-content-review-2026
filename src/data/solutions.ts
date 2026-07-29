@@ -49,11 +49,11 @@ export const solutionPages = {
     slug: "qdrive",
     hero: {
       eyebrow: "SOLUTION · MOBILITY",
-      title: "Qdrive",
+      title: "QDrive",
       tagline: ["차량 데이터가", "서비스가 되는 지점"],
       description:
         "차량과 충전 인프라의 데이터를 수집·표준화해 운행·에너지·탄소 관리 서비스로 연결합니다.",
-      imageAlt: "Qdrive 모빌리티 플랫폼",
+      imageAlt: "QDrive 모빌리티 플랫폼",
     },
   },
   evcp: {

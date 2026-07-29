@@ -1,5 +1,5 @@
 import Image from "next/image";
-export function QdriveSolutionContent() {
+export function QDriveSolutionContent() {
   return (
     <>
       <section className="sol-intro">
@@ -15,7 +15,7 @@ export function QdriveSolutionContent() {
         <figure className="sol-stage rv d3">
           <Image
             src="/ocube-content-review-2026/assets/images/solutions/screens/qdrive-driver.jpg"
-            alt="Qdrive 기사 앱(운전자 화면) — 프로토타입 예시"
+            alt="QDrive 기사 앱(운전자 화면) — 프로토타입 예시"
             loading="lazy"
             width="1500"
             height="848"
@@ -52,7 +52,7 @@ export function QdriveSolutionContent() {
               탄소 관리에 활용합니다
             </h2>
             <p className="sec-sub">
-              Qdrive는 차량에서 운행기록과 진단 신호를 수집해 위험운전, 에너지 사용, 탄소 배출을
+              QDrive는 차량에서 운행기록과 진단 신호를 수집해 위험운전, 에너지 사용, 탄소 배출을
               함께 관리하는 모빌리티 플랫폼입니다.
             </p>
           </div>
@@ -61,20 +61,20 @@ export function QdriveSolutionContent() {
               <Image
                 className="shot"
                 src="/ocube-content-review-2026/assets/images/solutions/qdrive-vehicle.png"
-                alt="Qdrive — 전기차 에너지·주행 데이터"
+                alt="QDrive — 전기차 에너지·주행 데이터"
                 loading="lazy"
                 width="760"
                 height="307"
               />
               <figcaption className="shot-cap">
-                Qdrive — 차량 데이터 기반 모빌리티 서비스
+                QDrive — 차량 데이터 기반 모빌리티 서비스
               </figcaption>
             </figure>
             <figure>
               <Image
                 className="shot"
                 src="/ocube-content-review-2026/assets/images/solutions/qdrive-cluster.png"
-                alt="Qdrive — 디지털 클러스터 UI"
+                alt="QDrive — 디지털 클러스터 UI"
                 loading="lazy"
                 width="1288"
                 height="520"
@@ -476,7 +476,7 @@ export function QdriveSolutionContent() {
             <span className="kicker">Ecosystem</span>
             <h2>플랫폼 생태계 위에서 동작</h2>
             <p className="sec-sub">
-              Qdrive는 기존 오큐브 플랫폼·
+              QDrive는 기존 오큐브 플랫폼·
               <wbr />
               솔루션 구성을 활용해 필요한 서비스부터 단계적으로 확장할 수 있습니다.
             </p>

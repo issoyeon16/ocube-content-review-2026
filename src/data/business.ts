@@ -15,7 +15,7 @@ const areas = [
   },
   {
     title: "교통·모빌리티",
-    description: "영상 인식 교통·안전과 모빌리티 데이터 플랫폼 — QVision·Qdrive",
+    description: "영상 인식 교통·안전과 모빌리티 데이터 플랫폼 — QVision·QDrive",
   },
 ] as const;
 
@@ -79,7 +79,7 @@ export const businessPages = {
         summary: "AI를 MES·ERP·설비에 연결해 분석 결과가 보고·승인·조치로 이어지도록 구현합니다.",
         image: "/ocube-content-review-2026/assets/images/business/process/ax-05-agent-integration.webp",
         bullets: [
-          "자연어 에이전트와 탐지→제안→승인→실행 흐름 연결",
+          "자연어 에이전트가 이상을 찾고 조치를 제안하며, 담당자가 승인한 뒤 실행하도록 연결",
           "클라우드·온프레미스·폐쇄망 배포",
           "기간계 API 연동으로 실제 업무 흐름 안에서 작동",
         ],

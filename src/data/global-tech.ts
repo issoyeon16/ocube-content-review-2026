@@ -108,7 +108,7 @@ export const technologyStack = [
     "ProtoPie",
     "UX · 인터랙션 검증",
     "노코드 프로토타이핑 · 하드웨어/신호 브리지",
-    "디자인→개발 핸드오프 · 시리얼/소켓/MQTT",
+    "디자인과 개발 핸드오프 · 시리얼/소켓/MQTT",
   ],
 ] as const;
 
