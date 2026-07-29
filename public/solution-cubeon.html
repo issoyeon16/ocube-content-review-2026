@@ -7,7 +7,7 @@
 <meta name="description" content="Cubeon — 산업 데이터를 표준화하고 AI 판단을 담당자 승인과 검증된 범위의 제한적 자동 실행으로 연결하는 산업 AI 운영 플랫폼.">
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-<link rel="stylesheet" href="assets/site2.css?v=content-60">
+<link rel="stylesheet" href="assets/site2.css?v=content-61">
 <script>document.documentElement.classList.add('js')</script>
 <link rel="canonical" href="https://issoyeon16.github.io/ocube-content-review-2026/solution-cubeon.html">
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='7'%20fill='%230e1626'/%3E%3Cpath%20d='M16%206.5l7.5%204.3v8.6L16%2023.7l-7.5-4.3v-8.6z'%20fill='none'%20stroke='%230075de'%20stroke-width='1.8'/%3E%3Cpath%20d='M16%206.5v17.2M8.5%2010.8l7.5%204.3%207.5-4.3'%20stroke='%235b9bff'%20stroke-width='1.4'%20fill='none'/%3E%3C/svg%3E">
@@ -114,9 +114,9 @@
     </div>
   </div>
   <div class="sol-body">
-    <figure class="sol-stage rv d3">
-    <img src="assets/img/proto/cubeon-infra.jpg" alt="Cubeon 화면 — 프로토타입 예시" loading="lazy" width="1600" height="1005">
-    <figcaption>Cubeon 인프라·모델 운영 화면 — 프로토타입 예시</figcaption>
+    <figure class="sol-stage sol-dashboard-stage rv d3">
+    <iframe class="sol-dashboard-frame" src="dashboards/cubeon-light.html" title="Cubeon 산업 AI 플랫폼 운영 대시보드"></iframe>
+    <figcaption>Cubeon 산업 AI 플랫폼 운영 대시보드</figcaption>
 </figure>
   </div>
 </section>
@@ -149,51 +149,96 @@
 <section id="features" class="sec-anchor">
   <div class="wrap">
     <div class="sec-head rv"><span class="kicker">Features</span>
-      <h2>플랫폼을 이루는 핵심 기능</h2>
-      <p class="lead">데이터 연결, 모델 운영, 담당자 승인, 현장 조치를 하나의 운영 흐름으로 관리합니다.</p></div>
+      <h2>산업 AI 운영을 연결하는 6가지 핵심 화면</h2>
+      <p class="lead">데이터 통합부터 이상 감지·예지보전·최적화·원인분석·승인 실행까지 하나의 운영 흐름으로 관리합니다.</p></div>
     <div class="duo">
-      <div class="duo-txt rv"><span class="pill">Closed-Loop</span>
-        <h3>승인과 현장 조치를 잇는 워크플로</h3>
-        <p>이상 징후가 발견되면 조치안을 제시하고, 담당자 승인 후 실행한 뒤 결과를 확인합니다. 누가 무엇을 판단하고 실행했는지도 기록으로 남깁니다.</p>
-                <ul class="pi-bul">
-          <li><b>3단계 자율화</b> 승인 → 개입 → 자동 실행을 위험도로 구분</li>
-          <li><b>승인 경로 자동 배정</b> 위험도 규칙에 맞는 승인자에게 전달</li>
-          <li><b>단계적 확대</b> 지켜보기 → 권고 → 자동 실행 순으로</li>
+      <div class="duo-txt rv"><span class="pill">01 · Data Integration</span>
+        <h3>산업 데이터 통합 관리</h3>
+        <p>PLC·DCS·MES·ERP·센서 등 분산된 산업 데이터를 연결하고, 수집 상태와 데이터 품질·표준화 현황을 한 화면에서 관리합니다.</p>
+        <ul class="pi-bul">
+          <li><b>연결 상태 관리</b> 소스별 연결 방식·수집 시간·이벤트 상태 확인</li>
+          <li><b>수집 흐름 추적</b> 수집부터 정제·저장·서비스까지 파이프라인 가시화</li>
+          <li><b>데이터 품질 관리</b> 태그 매핑·단위 표준화·메타데이터 관리</li>
         </ul>
       </div>
-      <div class="duo-media stage rv d1">
-        <img src="assets/img/proto/cubeon-builder.jpg" alt="에이전트 워크플로 빌더 화면" loading="lazy" width="1600" height="1005">
-        <p class="fitcap">노코드 워크플로 빌더 — 프로토타입 예시 화면</p>
+      <div class="duo-media stage cubeon-product-screen rv d1">
+        <img src="assets/img/cubeon/01-industrial-data-integration.png" alt="Cubeon 산업 데이터 통합 관리 화면" loading="lazy" width="1536" height="1024">
+        <p class="fitcap">산업 데이터 통합 관리</p>
       </div>
     </div>
     <div class="duo rev">
-      <div class="duo-txt rv"><span class="pill">ModelOps</span>
-        <h3>모델 레지스트리 · 지속 운영</h3>
-        <p>모델 버전과 배포 상태를 한곳에서 관리하고, 성능 변화를 감시해 재학습 시점을 판단합니다.</p>
-                <ul class="pi-bul">
-          <li><b>지속 재학습 루프</b> 학습 → 배포 → 성능 감시 → 재학습을 자동화된 운영 과정으로</li>
-          <li><b>데이터 변화 탐지</b> 분포 변화를 감지해 재학습 시점 판단</li>
-          <li><b>버전 관리·<wbr>복구</b> 모델 버전과 승인 이력 기록 — 품질 저하 시 검증된 직전 버전으로 복구</li>
+      <div class="duo-txt rv"><span class="pill">02 · Anomaly Detection</span>
+        <h3>AI 실시간 이상 감지</h3>
+        <p>라인·설비별 이상 점수와 실시간 알림을 함께 확인하고, 위험도와 대응 상태를 기준으로 우선순위를 판단합니다.</p>
+        <ul class="pi-bul">
+          <li><b>실시간 이상 점수</b> 설비 신호를 정상·주의·경고·위험 단계로 분류</li>
+          <li><b>다중 설비 관제</b> 라인별 상태와 이상 이벤트를 통합 모니터링</li>
+          <li><b>AI 보조 분석</b> 가장 위험한 설비와 주요 이상 신호를 요약</li>
         </ul>
       </div>
-      <div class="duo-media stage rv d1">
-        <img src="assets/img/proto/cubeon-modelreg.jpg" alt="모델 레지스트리 화면" loading="lazy" width="1600" height="1005">
-        <p class="fitcap">모델 관리 화면 — 프로토타입 예시 화면</p>
+      <div class="duo-media stage cubeon-product-screen rv d1">
+        <img src="assets/img/cubeon/02-ai-anomaly-detection.png" alt="Cubeon AI 실시간 이상 감지 관리 화면" loading="lazy" width="1536" height="1024">
+        <p class="fitcap">AI 실시간 이상 감지 관리</p>
       </div>
     </div>
     <div class="duo">
-      <div class="duo-txt rv"><span class="pill">Knowledge</span>
-        <h3>산업 지식그래프</h3>
-        <p>설비·<wbr>센서·<wbr>작업지시를 하나로 연결해 AI 판단에 현장 맥락을 더합니다.<br class="sb"> 같은 알람도 설비·<wbr>공정에 따라 조치가 달라집니다.</p>
-                <ul class="pi-bul">
-          <li><b>표준 프로토콜 수집</b> OPC-UA · MQTT · Modbus · CAN</li>
-          <li><b>업무 시스템 연동</b> PLC·<wbr>SCADA·<wbr>MES·<wbr>ERP를 어댑터로 통합</li>
-          <li><b>의미·<wbr>관계 정의</b> 설비·<wbr>공정을 객체·<wbr>속성·<wbr>관계로 정리</li>
+      <div class="duo-txt rv"><span class="pill">03 · Predictive Maintenance</span>
+        <h3>AI 예지보전 관리</h3>
+        <p>설비 상태와 잔여수명(RUL)을 예측하고, 위험 설비의 정비 시점과 권장 정비 유형을 운영 계획으로 연결합니다.</p>
+        <ul class="pi-bul">
+          <li><b>설비 위험도 관리</b> 정상·주의·위험 설비와 잔여수명 비교</li>
+          <li><b>상태 추세 분석</b> 진동·온도·전류 등 핵심 신호의 실시간 변화 확인</li>
+          <li><b>정비 계획 연계</b> 예측 결과를 권장 정비 시점과 일정으로 전환</li>
         </ul>
       </div>
-      <div class="duo-media stage rv d1">
-        <img src="assets/img/proto/dataq-knowledge.jpg" alt="지식 관리 화면" loading="lazy" width="1600" height="1005">
-        <p class="fitcap">지식 관리 콘솔 — 프로토타입 예시 화면</p>
+      <div class="duo-media stage cubeon-product-screen rv d1">
+        <img src="assets/img/cubeon/03-ai-predictive-maintenance.png" alt="Cubeon AI 예지보전 관리 화면" loading="lazy" width="1536" height="1024">
+        <p class="fitcap">AI 예지보전 관리</p>
+      </div>
+    </div>
+    <div class="duo rev">
+      <div class="duo-txt rv"><span class="pill">04 · Optimization</span>
+        <h3>공정·품질·에너지 최적화 관리</h3>
+        <p>현재 운전 조건과 AI 추천 조건을 비교하고, 생산·품질·에너지·비용 효과를 시나리오별로 검토합니다.</p>
+        <ul class="pi-bul">
+          <li><b>조건 비교</b> 현재값과 AI 추천값, 예상 영향도를 한눈에 확인</li>
+          <li><b>시나리오 분석</b> 생산·품질·에너지 우선순위별 운영안 비교</li>
+          <li><b>성과 추적</b> 적용 이력과 실제 개선 효과를 지속적으로 측정</li>
+        </ul>
+      </div>
+      <div class="duo-media stage cubeon-product-screen rv d1">
+        <img src="assets/img/cubeon/04-process-quality-energy-optimization.png" alt="Cubeon 공정 품질 에너지 최적화 관리 화면" loading="lazy" width="1536" height="1024">
+        <p class="fitcap">공정·품질·에너지 최적화 관리</p>
+      </div>
+    </div>
+    <div class="duo">
+      <div class="duo-txt rv"><span class="pill">05 · Root Cause &amp; Guidance</span>
+        <h3>AI 원인분석 및 운영 권고 관리</h3>
+        <p>이상 이벤트의 근본 원인을 분석하고, 관련 공정 데이터와 예상 효과를 근거로 실행 가능한 운영 권고안을 제시합니다.</p>
+        <ul class="pi-bul">
+          <li><b>근본 원인 분석</b> 이벤트·센서·제어 조건의 영향도를 순위화</li>
+          <li><b>운영 권고 생성</b> 심각도와 예상 효과를 반영한 조치안 제안</li>
+          <li><b>근거 기반 판단</b> 관련 데이터와 이벤트 타임라인을 함께 제공</li>
+        </ul>
+      </div>
+      <div class="duo-media stage cubeon-product-screen rv d1">
+        <img src="assets/img/cubeon/05-ai-root-cause-operations-guidance.png" alt="Cubeon AI 원인분석 및 운영 권고 관리 화면" loading="lazy" width="1536" height="1024">
+        <p class="fitcap">AI 원인분석 및 운영 권고 관리</p>
+      </div>
+    </div>
+    <div class="duo rev">
+      <div class="duo-txt rv"><span class="pill">06 · Human-in-the-Loop</span>
+        <h3>승인 기반 현장 실행 관리</h3>
+        <p>AI가 생성한 제어 제안을 담당자가 검토·승인한 뒤 현장에 실행하고, 진행 상태와 결과를 전 과정 이력으로 관리합니다.</p>
+        <ul class="pi-bul">
+          <li><b>승인 대기 관리</b> 위험도와 우선순위에 따른 작업 승인</li>
+          <li><b>제어 실행 추적</b> 제안·승인·실행·완료 단계의 실시간 상태 확인</li>
+          <li><b>결과 감사추적</b> 담당자·작업·설비·성과 이력을 함께 기록</li>
+        </ul>
+      </div>
+      <div class="duo-media stage cubeon-product-screen rv d1">
+        <img src="assets/img/cubeon/06-approval-based-field-execution.png" alt="Cubeon 승인 기반 현장 실행 관리 화면" loading="lazy" width="1536" height="1024">
+        <p class="fitcap">승인 기반 현장 실행 관리</p>
       </div>
     </div>
   </div>

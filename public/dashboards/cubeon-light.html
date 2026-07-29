@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cubeon Operations Console · Light</title>
+  <link rel="stylesheet" href="./realistic.css" />
+</head>
+<body class="cube-real cube-light">
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-cube">◇</span><div><strong>Cubeon</strong><small>Industrial AI Platform</small></div></div>
+      <div class="workspace"><small>WORKSPACE</small><button><span>EP</span><div><b>East Plant</b><em>Production</em></div><i>⌄</i></button></div>
+      <nav>
+        <a class="active"><i>⌂</i><span>플랫폼 개요</span></a>
+        <a><i>⇄</i><span>데이터·지식</span><b>23</b></a>
+        <a><i>◇</i><span>모델 운영</span><b>12</b></a>
+        <a><i>◎</i><span>에이전트 런타임</span><b>9</b></a>
+        <a><i>⌁</i><span>워크플로</span><b>18</b></a>
+        <a><i>◉</i><span>통합 관제</span></a>
+        <a><i>✓</i><span>거버넌스</span><b class="nav-alert">3</b></a>
+      </nav>
+      <div class="system-box"><p><i></i>시스템 정상</p><div><span>클러스터</span><b>3 / 3</b></div><div><span>데이터 지연</span><b>1.8초</b></div><div><span>시간 동기화</span><b>정상</b></div></div>
+      <div class="user"><span>OY</span><div><b>오윤서</b><small>Platform Admin</small></div><i>•••</i></div>
+    </aside>
+
+    <main>
+      <header class="topbar">
+        <div><p>Cubeon / 플랫폼 개요</p><h1>산업 AI 플랫폼 관제</h1></div>
+        <label class="search"><i>⌕</i><span>설비, 모델, 워크플로 검색</span><kbd>⌘ K</kbd></label>
+        <div class="top-actions"><button><i class="live-dot"></i>실시간</button><button>최근 24시간⌄</button><button class="bell">♧<b>3</b></button></div>
+      </header>
+
+      <section class="kpis">
+        <article><span class="kpi-symbol blue">PL</span><div><small>플랫폼 서비스</small><strong>32</strong><p><b>32/32</b> 정상 운영</p></div><em class="ok">정상</em></article>
+        <article><span class="kpi-symbol teal">⇢</span><div><small>데이터 처리량</small><strong>24.8<sup>K/s</sup></strong><p><b>1.92TB</b> 오늘 누적</p></div><em class="ok">안정적</em></article>
+        <article><span class="kpi-symbol amber">AI</span><div><small>AI 실행 작업</small><strong>486<sup>건</sup></strong><p><b>97%</b> 작업 성공률</p></div><em class="ok">+8.2%</em></article>
+        <article><span class="kpi-symbol purple">SLA</span><div><small>서비스 가용성</small><strong>99.96<sup>%</sup></strong><p><b>+0.04%</b> 목표 대비</p></div><em class="ok">목표 이상</em></article>
+      </section>
+
+      <section class="cube-grid">
+        <article class="panel closed-loop platform-map">
+          <div class="panel-head"><div><span>PLATFORM RUNTIME</span><h2>Cubeon 전체 운영 흐름</h2></div><button class="link-btn">런타임 상세 보기 →</button></div>
+          <p class="platform-desc">데이터가 들어와 AI가 판단하고, 승인과 현장 조치로 이어지는 8개 공통 커널의 상태입니다.</p>
+          <div class="kernel-flow">
+            <div class="kernel-node"><span>01</span><i>⇄</i><div><b>Connect</b><small>이기종 데이터 연결</small></div><strong>23<em> sources</em></strong><mark>정상</mark></div>
+            <div class="kernel-node"><span>02</span><i>⌁</i><div><b>Fabric</b><small>스트림·배치 처리</small></div><strong>24.8K<em>/s</em></strong><mark>안정</mark></div>
+            <div class="kernel-node"><span>03</span><i>▧</i><div><b>Semantic</b><small>스키마·온톨로지</small></div><strong>94<em>%</em></strong><mark>동기화</mark></div>
+            <div class="kernel-node"><span>04</span><i>◇</i><div><b>ModelOps</b><small>모델 배포·성능</small></div><strong>12<em> models</em></strong><mark class="watch">1 관찰</mark></div>
+            <div class="kernel-node"><span>05</span><i>◎</i><div><b>Agents</b><small>AI 에이전트 실행</small></div><strong>9<em> agents</em></strong><mark>정상</mark></div>
+            <div class="kernel-node"><span>06</span><i>→</i><div><b>Orchestrator</b><small>서비스·승인 조정</small></div><strong>18<em> flows</em></strong><mark>정상</mark></div>
+            <div class="kernel-node"><span>07</span><i>◉</i><div><b>Console</b><small>탐지·조치 관제</small></div><strong>18<em> alerts</em></strong><mark class="alert">2 중요</mark></div>
+            <div class="kernel-node"><span>08</span><i>✦</i><div><b>Copilot</b><small>자연어 현장 보조</small></div><strong>2.1<em>s</em></strong><mark>온라인</mark></div>
+          </div>
+          <div class="runtime-foot"><div><span>오늘 추론</span><b>1.84M</b></div><div><span>워크플로 성공률</span><b>98.7%</b></div><div><span>평균 응답</span><b>1.8초</b></div><div><span>승인 대기</span><b>3건</b></div><div><span>자동 조치</span><b>37건</b></div></div>
+          <div class="runtime-live">
+            <div class="runtime-live-title"><span>LIVE OPERATIONS</span><b>최근 10분 실행 흐름</b></div>
+            <div class="runtime-live-item"><i class="pulse-dot"></i><b>P-101A 이상 징후 분석</b><span>Semantic → ModelOps → Agent</span><em>조치안 생성</em><time>10:28</time></div>
+            <div class="runtime-live-item"><i></i><b>F2 품질 편차 감지</b><span>Fabric → ModelOps → Orchestrator</span><em>자동 보정 완료</em><time>10:24</time></div>
+            <div class="runtime-live-item"><i></i><b>에너지 피크 예측</b><span>Connect → Fabric → Copilot</span><em>현장 공유</em><time>10:19</time></div>
+          </div>
+        </article>
+
+        <article class="panel console">
+          <div class="panel-head"><div><span>PLATFORM HEALTH</span><h2>서비스·배포 상태</h2></div><button class="icon-link">↗</button></div>
+          <div class="health-score"><div class="ring green-ring"><strong>98<sup>%</sup></strong><span>플랫폼 상태</span></div><div><b>모든 핵심 서비스 정상</b><small>32개 서비스 · 3개 클러스터</small><em><i></i>마지막 점검 1분 전</em></div></div>
+          <div class="health-list"><div><span><i class="green"></i>Cloud Cluster</span><b>12 / 12</b><em>42%</em></div><div><span><i class="blue"></i>On-prem Cluster</span><b>16 / 16</b><em>68%</em></div><div><span><i class="purple"></i>Edge Nodes</span><b>24 / 25</b><em>55%</em></div></div>
+          <div class="deployment"><span>배포 환경</span><b>클라우드</b><b>온프레미스</b><b>폐쇄망</b></div>
+          <div class="resource-strip">
+            <div><span>CPU</span><b>54%</b><i><em style="width:54%"></em></i></div>
+            <div><span>GPU</span><b>71%</b><i><em style="width:71%"></em></i></div>
+            <div><span>MEM</span><b>63%</b><i><em style="width:63%"></em></i></div>
+          </div>
+          <div class="release-note"><i>✓</i><p><b>ModelOps v2.8.1 배포 완료</b><span>무중단 롤링 업데이트 · 10:12</span></p><em>정상</em></div>
+        </article>
+
+        <article class="panel mini connect">
+          <div class="panel-head"><div><span>CONNECT</span><h2>이기종 데이터 연결</h2></div><em class="status ok">정상</em></div>
+          <div class="metric-row"><strong>23</strong><span>데이터 소스<br><b>21 정상 · 2 점검</b></span></div>
+          <div class="source-row"><span>OPC-UA 설비</span><b><i></i>8개 연결</b></div>
+          <div class="source-row"><span>MQTT 센서</span><b><i></i>124개 연결</b></div>
+          <div class="source-row"><span>MES · ERP</span><b><i></i>동기화 중</b></div>
+          <div class="mini-foot"><span>신규 연결 <b>+2</b></span><span>재시도 <b>0건</b></span></div>
+        </article>
+
+        <article class="panel mini fabric">
+          <div class="panel-head"><div><span>FABRIC</span><h2>데이터 파이프라인</h2></div><em class="status ok">안정적</em></div>
+          <div class="metric-row"><strong>24.8K</strong><span>events / sec<br><b>평균 지연 320ms</b></span></div>
+          <svg viewBox="0 0 280 70" preserveAspectRatio="none"><defs><linearGradient id="cArea" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#52cfff" stop-opacity=".28"/><stop offset="100%" stop-color="#52cfff" stop-opacity="0"/></linearGradient></defs><path class="area" d="M0,58 C22,54 36,43 58,48 S93,62 116,37 S151,26 174,40 S208,49 229,25 S260,18 280,23 L280,70 L0,70 Z"/><path class="line" d="M0,58 C22,54 36,43 58,48 S93,62 116,37 S151,26 174,40 S208,49 229,25 S260,18 280,23"/></svg>
+          <div class="split"><span>스트림 <b>18</b></span><span>배치 <b>7</b></span></div>
+          <div class="mini-foot"><span>P95 지연 <b>680ms</b></span><span>실패율 <b>0.02%</b></span></div>
+        </article>
+
+        <article class="panel mini semantic">
+          <div class="panel-head"><div><span>SEMANTIC</span><h2>의미 표준화</h2></div><em class="status ok">동기화</em></div>
+          <div class="semantic-content"><div class="ring"><strong>94<sup>%</sup></strong><span>매핑 완료</span></div><dl><div><dt>객체</dt><dd>2,480</dd></div><div><dt>속성</dt><dd>8,912</dd></div><div><dt>관계</dt><dd>4,206</dd></div></dl></div>
+          <p class="module-note">신규 작업표준서 18건 반영 완료</p>
+          <div class="mini-foot"><span>오늘 매핑 <b>18건</b></span><span>승인 대기 <b>4건</b></span></div>
+        </article>
+
+        <article class="panel mini modelops">
+          <div class="panel-head"><div><span>MODELOPS</span><h2>모델 거버넌스</h2></div><em class="status watch">1건 관찰</em></div>
+          <div class="metric-row"><strong>12</strong><span>운영 모델<br><b>오늘 추론 1.84M회</b></span></div>
+          <div class="model-row"><span>PUMP-ANOMALY v2.3</span><b>운영</b><em>F1 0.94</em></div>
+          <div class="model-row"><span>QUALITY-AGENT v1.8</span><b>운영</b><em>F1 0.91</em></div>
+          <div class="model-row watch"><span>TURBINE-RUL v1.4</span><b>관찰</b><em>PSI 0.18</em></div>
+          <div class="mini-foot"><span>드리프트 <b>1건</b></span><span>재학습 대기 <b>2건</b></span></div>
+        </article>
+
+        <article class="panel agents">
+          <div class="panel-head"><div><span>AGENTS</span><h2>AI 에이전트 운영</h2></div><button class="link-btn">에이전트 관리 →</button></div>
+          <div class="agent-summary"><div class="ring green-ring"><strong>97<sup>%</sup></strong><span>작업 성공률</span></div><div><strong>486</strong><span>오늘 완료 작업</span><small>평균 응답 2.1초</small></div><div><strong>9</strong><span>실행 중 에이전트</span><small>대기 작업 14건</small></div></div>
+          <div class="agent-table"><div class="table-head"><span>에이전트</span><span>최근 작업</span><span>상태</span></div><div><b>품질 분석 에이전트</b><span>불량 원인 분석 · 1분 전</span><em>실행 중</em></div><div><b>설비 코파일럿</b><span>점검 권고 생성 · 3분 전</span><em>실행 중</em></div><div><b>에너지 최적화 에이전트</b><span>피크 부하 제어안 · 6분 전</span><em>대기</em></div></div>
+        </article>
+
+        <article class="panel copilot">
+          <div class="panel-head"><div><span>COPILOT</span><h2>현장 코파일럿</h2></div><em class="status ok">온라인</em></div>
+          <div class="chat"><div class="ask"><span>OY</span><p>P-101A 진동이 증가한 이유는?</p></div><div class="reply"><span>AI</span><p><b>베어링 마모 가능성이 높습니다.</b><br>최근 6시간 진동이 18.6% 상승했고 유사 정비 이력 3건과 일치합니다.</p></div></div>
+          <div class="prompt-box"><span>후속 질문을 입력하세요</span><button>↑</button></div>
+          <div class="copilot-context"><span>연결 컨텍스트</span><b>설비 이력</b><b>실시간 센서</b><b>정비 매뉴얼</b></div>
+          <div class="copilot-action"><p><small>권장 다음 작업</small><b>베어링 온도 확인 후 정비 티켓 생성</b></p><button>작업 생성</button></div>
+        </article>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

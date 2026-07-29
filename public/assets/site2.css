@@ -1231,9 +1231,12 @@ section.sec-anchor:not(.deploy):not(.dark):not(.platform) + section.sec-anchor:n
   background:linear-gradient(135deg,#dcecff 0%,#edf4ff 45%,#f5e7f2 100%)}
 .sol-stage img,.sol-stage video{display:block;width:100%;height:auto;object-fit:contain;object-position:center;
   background:#07182f;border:1px solid #1e3f66;border-radius:12px;box-shadow:0 22px 54px rgba(20,44,75,.2)}
+.sol-dashboard-stage{overflow:hidden}
+.sol-dashboard-frame{display:block;width:100%;height:clamp(520px,60vw,720px);border:1px solid #b8c9dd;border-radius:12px;background:#f7f9fc;box-shadow:0 22px 54px rgba(20,44,75,.16)}
 .sol-stage figcaption{margin-top:14px;font-size:12.5px;color:var(--fg-muted)}
 @media(max-width:720px){
   .sol-stage{border-radius:14px;margin-top:44px;padding:12px}
+  .sol-dashboard-frame{height:520px}
 }
 
 /* ══ 기능 교차 행 확장 — genos 모듈 행 문법 (심화 페이지 #features) ══ */
@@ -1249,6 +1252,8 @@ section.sec-anchor:not(.deploy):not(.dark):not(.platform) + section.sec-anchor:n
   border:1px solid #adc9ec;border-radius:18px;padding:clamp(12px,1.6vw,22px);
   box-shadow:0 20px 55px rgba(28,76,133,.10)}
 .duo-media.stage img{border:1px solid #1e3f66;border-radius:10px;background:#07182f;box-shadow:none}
+.duo-media.stage.cubeon-product-screen{background:linear-gradient(135deg,#eff6ff 0%,#f8fbff 52%,#f2f5fb 100%);border-color:#cad8e8}
+.duo-media.stage.cubeon-product-screen img{border-color:#d6e0eb;background:#fff}
 /* 그라디언트 프레임(밝은 하늘색) 위라 --fg-3(4.46:1)는 AA 미달 → --fg-muted(5.5:1) */
 .duo-media.stage .fitcap{margin-top:10px;margin-bottom:-2px;color:var(--fg-muted)}
 
